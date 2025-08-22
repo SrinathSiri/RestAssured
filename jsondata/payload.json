@@ -1,0 +1,10 @@
+{
+  "id": "123",
+  "name": "N MODI",
+  "location": "India",
+  "phone": "999999999",
+  "courses": [
+    "IndiaHistory",
+    "Politics"
+  ]
+}
