@@ -9,7 +9,7 @@ public class OAUTH2Auth {
     @Test
     public void oauth2Auth(){
         given()
-                .auth().oauth2("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")
+                .auth().oauth2("Token")
                 .when()
                 .get("https://api.github.com/user/repos")
                 .then()
