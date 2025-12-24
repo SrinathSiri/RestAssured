@@ -24,5 +24,24 @@ public class SpecBuilder {
                 .expectBody("data.id",greaterThan(0))
                 .expectBody("data.email",equalToIgnoringCase("janet.weaver@reqres.in"))
                 .build();
+
+        /* Step 1: Create the object
+        ResponseSpecBuilder responseSpecBuilder = new ResponseSpecBuilder();
+
+         Step 2: Set expected status code
+        responseSpecBuilder.expectStatusCode(statuscode);
+
+         Step 3: Set expected content type
+        responseSpecBuilder.expectContentType("application/json");
+
+         Step 4: Validate response body fields
+        responseSpecBuilder.expectBody("data.id", greaterThan(0));
+        responseSpecBuilder.expectBody(
+                "data.email",
+                equalToIgnoringCase("janet.weaver@reqres.in")
+        );
+
+         Step 5: Build and return ResponseSpecification
+        return responseSpecBuilder.build();*/
     }
 }
