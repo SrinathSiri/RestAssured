@@ -16,10 +16,12 @@ public class StudentDataSerial {
         String[] courses = {"English","Maths"};
         pobj.setStCourse(courses);
 
+        System.out.println("Java Object data is : "+pobj);
+
         // converting java object to json object
 
         ObjectMapper om = new ObjectMapper();
         String jsonobject = om.writerWithDefaultPrettyPrinter().writeValueAsString(pobj);
-        System.out.println(jsonobject);
+        System.out.println("JSON object data is : "+jsonobject);
     }
 }
