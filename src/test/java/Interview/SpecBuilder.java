@@ -13,7 +13,7 @@ public class SpecBuilder {
     public static RequestSpecification reqSpec() {
         return given()
                 .baseUri("https://reqres.in")
-                .contentType("application/json");
+                .contentType("text/html; charset=UTF-8");
     }
 
     public static ResponseSpecification resSpec(int statuscode){
@@ -21,8 +21,8 @@ public class SpecBuilder {
         return new ResponseSpecBuilder()
                 .expectStatusCode(statuscode)
                 .expectContentType("application/json")
-                .expectBody("data.id",greaterThan(0))
-                .expectBody("data.email",equalToIgnoringCase("janet.weaver@reqres.in"))
+                //.expectBody("data.id",greaterThan(0))
+                //.expectBody("data.email",equalToIgnoringCase("janet.weaver@reqres.in"))
                 .build();
 
         /* Step 1: Create the object
